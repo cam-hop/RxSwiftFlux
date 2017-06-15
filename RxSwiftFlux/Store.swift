@@ -34,7 +34,7 @@ public extension StoreVariableCompatible {
     }
 }
 
-public class Store: ReactiveCompatible, StoreVariableCompatible {
+open class Store: ReactiveCompatible, StoreVariableCompatible {
     
     let disposeBag = DisposeBag()
     
