@@ -15,7 +15,7 @@ public protocol Action {
 }
 
 public class ActionCreator {
-    static let dispatcher = DefaultDispatcher.shared
+    public static let dispatcher = DefaultDispatcher.shared
     
     public class func invoke<T: Action>(action: T) {
         action.invoke(self.dispatcher)
